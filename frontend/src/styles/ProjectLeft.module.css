@@ -1,0 +1,29 @@
+.project-left {
+  background-color: #5709bc;
+  width: 25%;
+  height: 100vh;
+}
+.filter {
+  position: sticky;
+  top: 0px;
+  font-size: 40px;
+  text-align: center;
+  color: white;
+  letter-spacing: 2px;
+  font-weight: 600;
+  font-family: Poppins;
+  transition: "all 0.2s";
+}
+.project-left ::-webkit-scrollbar-track {
+  background: #5709bc;
+}
+.project-left ::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+}
+.project-left ::-webkit-scrollbar-thumb {
+  background: #b5a4a4;
+}
+/* Handle on hover */
+.project-left ::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}

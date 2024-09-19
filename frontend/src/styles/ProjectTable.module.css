@@ -1,0 +1,133 @@
+.two-tables {
+  display: flex;
+  justify-content: space-evenly;
+}
+.data-tables {
+  width: 90%;
+  text-align: center;
+  border: 2px solid black;
+  border-radius: 10px;
+  margin: 10px;
+  font-size: 18px;
+  padding: 10px;
+  font-family: Poppins;
+  height: 100%;
+  background: rgb(253, 243, 243);
+}
+.profile-reset {
+  box-sizing: border-box;
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  font-family: Poppins;
+  font-weight: 600;
+  border: none;
+  outline: none;
+  margin-left: 50px;
+  background-color: #5043b3;
+  border-radius: 10px;
+  padding: 5px 10px;
+  transition: all 0.2s;
+}
+.profile-reset:hover {
+  cursor: pointer;
+  background-color: #2e285c;
+}
+.profile-reset:disabled {
+  background-color: grey;
+  cursor: default;
+}
+@font-face {
+  font-family: Inter;
+  src: url("../fonts/Inter-Regular.ttf");
+}
+@font-face {
+  font-family: Poppins;
+  src: url("../fonts/Poppins-Regular.ttf");
+}
+.data-captions {
+  font-size: 35px;
+  font-family: Poppins;
+  margin: 20px;
+  text-align: center;
+  margin-bottom: 3%;
+  margin-top: 3%;
+  letter-spacing: 2px;
+  font-weight: bold;
+}
+.data-tables th,
+.data-tables tr {
+  padding: 10px;
+}
+.kroopies-logo {
+  width: 25px;
+  object-fit: contain;
+  height: 40px;
+  vertical-align: -50%;
+  margin-left: 10px;
+}
+@media screen and (max-width: 1057px) {
+  .two-tables {
+    display: block;
+  }
+  .data-tables {
+    width: 90%;
+    margin-left: 5%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .two-tables {
+    display: block;
+  }
+  .data-captions {
+    font-size: 20px;
+  }
+  .data-tables th,
+  .data-tables tr {
+    padding: 5px;
+  }
+  .data-tables {
+    width: 90%;
+    margin-left: 5%;
+    padding: 5px;
+    font-size: 15px;
+  }
+  .kroopies-logo {
+    vertical-align: -65%;
+  }
+}
+@media screen and (max-width: 370px) {
+  .data-tables {
+    width: 90%;
+    margin-left: 5%;
+    padding: 5px;
+    font-size: 12px;
+  }
+  .kroopies-logo {
+    width: 20px;
+    height: 20px;
+    vertical-align: -30%;
+    margin-left: 5px;
+  }
+}
+.name {
+  font-size: 5px;
+}
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+.header {
+  background-color: #3626a7;
+}
+.sub {
+  font-size: 55px;
+}
+.row-gap {
+  padding: 15px;
+}
+.container {
+  display: flex;
+  align-items: center;
+  margin: auto;
+}

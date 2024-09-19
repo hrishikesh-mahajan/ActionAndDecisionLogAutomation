@@ -1,0 +1,189 @@
+.txtflds {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin-left: 10%;
+  margin-bottom: 20px;
+}
+.prompts {
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  width: 80%;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-left: 10%;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  font-weight: 600;
+}
+.smallbutts {
+  color: #3626a7;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.butts {
+  white-space: nowrap;
+  background-color: #3626a7;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  width: 50%;
+  margin-left: 26%;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  border: 1px solid black;
+  border-radius: 5px;
+  font-weight: 600;
+  z-index: 0;
+}
+.choices-one {
+  width: 100%;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: Inter;
+  color: white;
+  background-color: #191061;
+  box-sizing: border-box;
+  padding: 30px;
+}
+.login-prompt {
+  width: 80%;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: Inter;
+  padding-top: 50px;
+  padding-left: 10%;
+  padding-right: 10%;
+  word-wrap: break-word;
+}
+.butts:hover {
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+.vidcard1 {
+  width: 25%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto auto;
+  object-fit: cover;
+}
+.mainBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.main-inputs {
+  background-color: #ffdae9;
+  width: 500px;
+  max-height: 800px;
+  border-radius: 10px;
+  border: 3px solid black;
+  z-index: 2;
+  opacity: 0.9;
+}
+.svg-bind {
+  padding: 4px;
+  background-color: rgb(231, 223, 223);
+  border: 2px solid black;
+  border-right: none;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+.fliplogoplace {
+  position: absolute;
+  z-index: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  overflow: hidden;
+  margin: auto;
+  max-width: 100%;
+  max-height: 100%;
+  opacity: 0.1;
+}
+.login {
+  height: 50%;
+}
+.choices {
+  position: relative;
+  margin: 0;
+  margin-bottom: 40px;
+  top: -1px;
+}
+input[type="radio"] {
+  display: none;
+}
+.choices label {
+  display: inline-block;
+  color: white;
+  font-weight: 600;
+  background-color: #3626a7;
+  padding: 5% 0%;
+  font-family: Arial;
+  font-size: 130%;
+  cursor: pointer;
+  width: 50%;
+  text-align: center;
+  border-bottom: 3px solid black;
+  margin: 0;
+}
+.choices input[type="radio"]:checked + label {
+  background-color: #191061;
+  color: white;
+}
+#lab1 {
+  border-right: 3px solid black;
+}
+#lab2 {
+  border-left: 3px solid black;
+}
+@font-face {
+  font-family: Inter;
+  src: url("../fonts/Inter-Regular.ttf");
+}
+.backEndFail {
+  color: red;
+  text-align: left;
+  font-size: 15px;
+  font-family: Inter;
+}
+@media screen and (max-width: 480px) {
+  .main-inputs {
+    max-width: 300px;
+  }
+}
+.dukkar {
+  font: inherit;
+  letter-spacing: inherit;
+  color: currentColor;
+  padding: 4px 0 5px;
+  border: 0;
+  box-sizing: content-box;
+  background: none;
+  height: 1.4375em;
+  margin: 0;
+  -webkit-tap-highlight-color: transparent;
+  display: block;
+  min-width: 0;
+  width: 100%;
+  -webkit-animation-name: mui-auto-fill-cancel;
+  animation-name: mui-auto-fill-cancel;
+  -webkit-animation-duration: 10ms;
+  animation-duration: 10ms;
+  padding: 16.5px 14px;
+}

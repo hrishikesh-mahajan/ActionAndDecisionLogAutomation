@@ -1,0 +1,32 @@
+.dashboard-left {
+  background-color: #5709bc;
+  width: 25%;
+}
+.delay {
+  position: sticky;
+  top: 0px;
+  font-size: 30px;
+  text-align: center;
+  color: white;
+  letter-spacing: 2px;
+  font-weight: 600;
+  font-family: Poppins;
+  transition: "all 0.2s";
+}
+.delayCards {
+  height: calc(100vh - 92px);
+  overflow-y: auto;
+}
+.dashboard-left ::-webkit-scrollbar-track {
+  background: #5709bc;
+}
+.dashboard-left ::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+}
+.dashboard-left ::-webkit-scrollbar-thumb {
+  background: #b5a4a4;
+}
+/* Handle on hover */
+.dashboard-left ::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}

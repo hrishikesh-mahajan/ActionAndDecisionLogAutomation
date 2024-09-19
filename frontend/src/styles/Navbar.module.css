@@ -1,0 +1,112 @@
+.nav-logo {
+  width: 45px;
+  object-fit: contain;
+  height: 45px;
+  position: absolute;
+  left: 20px;
+  top: 5px;
+  cursor: pointer;
+}
+.navbar {
+  box-sizing: border-box;
+  z-index: 10;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 30px;
+  position: sticky;
+  background-color: white;
+  top: 0;
+  padding: 30px 10px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px,
+    rgba(0, 0, 0, 0.1) 0px 2px 4px 0px,
+    rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+  transition: 1s;
+}
+.navbar-nav {
+  display: flex;
+  list-style: none;
+}
+.nav-item {
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 5px;
+}
+.nav-item1 {
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 5px;
+}
+@font-face {
+  font-family: Poppins;
+  src: url("../fonts/Poppins-Regular.ttf");
+}
+.nav-link {
+  color: #757191;
+  text-decoration: none;
+  font-size: 18px;
+  font-family: Poppins;
+  font-weight: 600;
+  white-space: nowrap;
+}
+.nav-link:hover {
+  color: #241e54;
+}
+.nav-logout {
+  box-sizing: border-box;
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  font-family: Poppins;
+  font-weight: 600;
+  border: none;
+  outline: none;
+  margin: 0px 30px;
+  background-color: #5043b3;
+  border-radius: 10px;
+  padding: 5px 10px;
+  transition: all 0.2s;
+}
+.nav-logout:hover {
+  cursor: pointer;
+  background-color: #2e285c;
+}
+.tWin {
+  white-space: nowrap;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  -webkit-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  border-radius: 5px;
+  font-weight: bold;
+  z-index: 0;
+  margin-bottom: 10px;
+}
+.tWin:hover {
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+.menu {
+  display: none;
+}
+.menu.open {
+  display: none;
+}
+@media (max-width: 1033px) {
+  .menu {
+    display: flex;
+  }
+  .nav-logout {
+    margin: 0px 10px;
+  }
+  .nav-item {
+    display: none;
+  }
+}

@@ -1,0 +1,57 @@
+.dashboard-right {
+  background-color: #5709bc;
+  width: 25%;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  font-family: poppins;
+  font-weight: 700;
+  letter-spacing: 1px;
+  justify-content: center;
+  font-size: 17px;
+  width: 100%;
+  margin: 10px;
+}
+.proj {
+  position: sticky;
+  top: 0px;
+  font-size: 30px;
+  text-align: center;
+  color: white;
+  letter-spacing: 2px;
+  font-weight: 600;
+  font-family: Poppins;
+  transition: "all 0.2s";
+}
+.react-chartjs-2 .legend-label {
+  letter-spacing: 2px;
+}
+.switch-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-family: Inter;
+  font-weight: bold;
+  letter-spacing: 1px;
+  gap: 1em;
+  padding-top: 10px;
+}
+.delay {
+  position: sticky;
+  top: 0px;
+  font-size: 30px;
+  text-align: center;
+  color: white;
+  letter-spacing: 2px;
+  font-weight: 600;
+  font-family: Poppins;
+  transition: "all 0.2s";
+}
+.delayCards {
+  height: calc(100vh - 92px);
+  overflow-y: auto;
+}

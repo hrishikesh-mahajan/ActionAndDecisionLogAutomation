@@ -1,0 +1,314 @@
+@font-face {
+  font-family: Inter;
+  src: url("../fonts/Inter-Regular.ttf");
+}
+.container {
+  width: 80%;
+  height: 700px;
+  margin: 0 auto;
+  border: 10px solid var(--clr-dark);
+}
+.profile {
+  height: 60%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 1em;
+  position: relative;
+}
+.btn-right {
+  width: 200px;
+  height: 50px;
+  box-sizing: border-box;
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  font-family: Poppins;
+  font-weight: 600;
+  border: none;
+  outline: none;
+  margin: 20px 10px;
+  background-color: #5043b3;
+  border-radius: 10px;
+  padding: 5px 10px;
+  transition: all 0.2s;
+}
+.btn-right:hover {
+  cursor: pointer;
+  background-color: #2e285c;
+}
+.profile-reset {
+  box-sizing: border-box;
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  font-family: Poppins;
+  font-weight: 600;
+  border: none;
+  outline: none;
+  background-color: #5043b3;
+  border-radius: 10px;
+  padding: 5px 10px;
+  transition: all 0.2s;
+}
+.profile-reset:hover {
+  cursor: pointer;
+  background-color: #2e285c;
+}
+.profile-reset:disabled {
+  background-color: grey;
+  cursor: default;
+}
+.resetWrapper {
+  margin-top: 1%;
+}
+.profile-opts {
+  box-sizing: border-box;
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  font-family: Poppins;
+  font-weight: 600;
+  border: none;
+  outline: none;
+  margin-left: 20px;
+  margin-bottom: 30px;
+  background-color: #5043b3;
+  border-radius: 10px;
+  padding: 5px 10px;
+  transition: all 0.2s;
+  vertical-align: -80%;
+}
+.profile-opts:hover {
+  cursor: pointer;
+  background-color: #2e285c;
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.kroope {
+  width: 120px;
+  height: 50px;
+  background-color: #3626a7;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  font-weight: 700;
+  color: var(--clr-light);
+  border: 10px solid var(--clr-accent);
+  padding: 5px;
+  border-radius: 10px;
+}
+#coin {
+  position: relative;
+  width: 45px;
+  height: 45px;
+  transform-style: preserve-3d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+}
+#status {
+  color: white;
+  font-family: Inter;
+  align-self: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.heads {
+  background-size: cover;
+  transition: transform 2s linear;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  backface-visibility: hidden;
+  background-size: contain;
+  position: absolute;
+  align-self: center;
+  animation: spin 6s linear infinite;
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.corner-kroopies {
+  position: absolute;
+  right: 1em;
+  top: 1.5em;
+  display: inline-block;
+  font-size: 18px;
+  font-family: Inter;
+  font-weight: bold;
+  background-color: #5043b3;
+  padding: 10.8px 32px;
+  border-radius: 5px;
+  color: white;
+  margin-bottom: 10px;
+  letter-spacing: 2px;
+  box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em,
+    rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+}
+.kroopies-logo-disp {
+  width: 30px;
+  object-fit: contain;
+  height: 30px;
+  vertical-align: -40%;
+  margin-right: 10px;
+  animation: spin 6s linear infinite;
+}
+.header {
+  font-family: poppins;
+  font-size: 22px;
+  padding-bottom: 3px;
+  font-weight: 600;
+  transition: all 0.2s;
+  letter-spacing: 3px;
+}
+.table {
+  height: 40%;
+  padding: 1em;
+}
+.user {
+  font-weight: 500;
+  font-family: "Poppins";
+  letter-spacing: 1px;
+}
+.icon-user {
+  width: 25px;
+  height: 25px;
+}
+@media screen and (max-width: 750px) {
+  .corner-kroopies {
+    padding: 10.8px 18px;
+  }
+}
+@media screen and (max-width: 720px) {
+  .user {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 655px) {
+  .corner-kroopies {
+    padding: 10.8px 14px;
+    margin-bottom: 5px;
+  }
+}
+@media screen and (max-width: 640px) {
+  .user {
+    font-size: 18px;
+    letter-spacing: 1px;
+  }
+}
+@media screen and (max-width: 604px) {
+  .user {
+    font-size: 15px;
+  }
+  .icon-user {
+    width: 20px;
+    height: 20px;
+  }
+}
+@media screen and (max-width: 538px) {
+  .corner-kroopies {
+    padding: 10.8px 10px;
+    font-size: 12px;
+    letter-spacing: 1px;
+  }
+  .kroopies-logo-disp {
+    width: 22px;
+    height: 22px;
+    margin-right: 4px;
+  }
+  #coin {
+    width: 35px;
+    height: 35px;
+  }
+  .heads {
+    width: 35px;
+    height: 35px;
+  }
+  #status {
+    font-size: 12px;
+  }
+  .kroope {
+    width: 75px;
+    height: 50px;
+  }
+  .icon-user {
+    width: 17px;
+    height: 17px;
+  }
+}
+@media screen and (max-width: 494px) {
+  .user {
+    font-size: 14px;
+    letter-spacing: 0.25px;
+  }
+  #coin {
+    width: 30px;
+    height: 30px;
+  }
+  .heads {
+    width: 30px;
+    height: 30px;
+  }
+  #status {
+    font-size: 11px;
+  }
+  .kroope {
+    width: 70px;
+    height: 40px;
+  }
+  .icon-user {
+    width: 15px;
+    height: 15px;
+  }
+}
+@media screen and (max-width: 455px) {
+  .icon-user {
+    width: 15px;
+    height: 15px;
+  }
+  .user {
+    font-size: 12.5px;
+    letter-spacing: 0.2px;
+  }
+  #coin {
+    width: 30px;
+    height: 30px;
+  }
+  .heads {
+    width: 30px;
+    height: 30px;
+  }
+  #status {
+    font-size: 11px;
+  }
+  .kroope {
+    width: 70px;
+    height: 40px;
+  }
+}
+@media screen and (max-width: 455px) {
+  .corner-kroopies {
+    padding: 7.8px 5px;
+    font-size: 10px;
+    letter-spacing: 0.5px;
+  }
+  .kroopies-logo-disp {
+    width: 18px;
+    height: 18px;
+    margin-right: 5px;
+  }
+}

@@ -1,0 +1,35 @@
+.mainCard {
+  width: 90%;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  margin-left: 5%;
+  border-radius: 25px;
+  position: relative;
+  transition: transform 0.2s;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px -5px 10px -1.8px inset;
+  color: black;
+  box-sizing: border-box;
+}
+.mainCard:hover {
+  transform: scale(1.02);
+  cursor: pointer;
+}
+.textCard {
+  font-family: "Poppins";
+  font-weight: 600;
+  letter-spacing: 3px;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.subCard {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.deetsName {
+  font-weight: bold;
+  font-family: Poppins;
+  font-size: 20px;
+}
